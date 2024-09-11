@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Updated for v6
+import EnvironmentalDashboard from './components/EnvironmentalDashboard';
+import FinanceDashboard from './components/FinanceDashboard';
+import HRDashboard from './components/HRDashboard';
+import Sidebar from './components/Sidebar';
+import './styles.css'; 
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Sidebar />
+        <Routes>
+        <Route path="/environmental" element={<EnvironmentalDashboard />} />
+        <Route path="/finance" element={<FinanceDashboard />} />
+        <Route path="/hr" element={<HRDashboard />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

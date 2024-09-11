@@ -1,0 +1,64 @@
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px; /* Adjust the width of the sidebar */
+  position: fixed; /* Fix the sidebar to the left side of the page */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #f4f4f4; /* Light background color for the sidebar */
+  padding: 20px; /* Padding inside the sidebar */
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Optional shadow for better visual separation */
+}
+
+.sidebar a {
+  display: block; /* Make each link block-level to stack vertically */
+  padding: 10px;
+  color: #333; /* Dark text color for the links */
+  text-decoration: none; /* Remove underline from links */
+  margin-bottom: 10px; /* Space between links */
+  border-radius: 4px; /* Rounded corners for links */
+  transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+
+.sidebar a:hover {
+  background-color: #ddd; /* Light background color on hover */
+}
+
+
+
+/* Content Styles */
+.dashboard-container {
+  margin-left: 260px; /* Space to the right of the sidebar */
+  padding: 20px; /* Padding for the main content area */
+}
+
+.dashboard-section {
+  margin-bottom: 40px; /* Space between sections */
+}
+
+.dashboard-table {
+  width: 100%; /* Full width for tables */
+  border-collapse: collapse; /* Collapse borders for a clean look */
+}
+
+.dashboard-table th, .dashboard-table td {
+  border: 1px solid #ddd; /* Light borders for table cells */
+  padding: 8px; /* Padding inside table cells */
+}
+
+.dashboard-table th {
+  background-color: #f2f2f2; /* Light background for header cells */
+  text-align: left; /* Align text to the left in header cells */
+}
+
+h1, h2 {
+  color: #333; /* Dark text color for headings */
+  margin-bottom: 20px; /* Space below headings */
+}
+
+/* Additional styles for HR dashboard if needed */
+.hr-dashboard {
+  margin-left: 260px; /* Ensure space to the right of the sidebar */
+  padding: 20px; /* Padding for the main content area */
+}
